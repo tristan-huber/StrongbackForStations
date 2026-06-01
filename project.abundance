@@ -19,8 +19,7 @@
     },
     {
       "name": "RibHeight",
-      "ioValue": 9,
-      "currentEquation": "9"
+      "ioValue": 9
     }
   ],
   "topLevel": true,
@@ -64,10 +63,6 @@
       "y": 0.4226190476190476,
       "uniqueID": "id-12",
       "ioValues": [
-        {
-          "name": "x length",
-          "ioValue": 110.181779842521
-        },
         {
           "name": "y length",
           "ioValue": 0.75
@@ -231,10 +226,6 @@
       "y": 0.681547619047619,
       "uniqueID": "id-74",
       "ioValues": [
-        {
-          "name": "x length",
-          "ioValue": 110.181779842521
-        },
         {
           "name": "y length",
           "ioValue": 12,
