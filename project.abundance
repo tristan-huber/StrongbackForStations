@@ -11,7 +11,7 @@
     },
     {
       "name": "Width",
-      "ioValue": 10
+      "ioValue": 12
     },
     {
       "name": "PlyThickness",
@@ -19,7 +19,8 @@
     },
     {
       "name": "RibHeight",
-      "ioValue": 9
+      "ioValue": 9,
+      "currentEquation": "9"
     }
   ],
   "topLevel": true,
@@ -39,11 +40,11 @@
     {
       "atomType": "Input",
       "x": 0.0231,
-      "y": 0.800595238095238,
+      "y": 0.14,
       "uniqueID": "id-4",
       "name": "Stations",
       "type": "import",
-      "fileName": "StationMolds(1).step",
+      "fileName": "StationMolds.step",
       "fileSha": null,
       "fileType": "STEP",
       "repoOwner": null,
@@ -65,7 +66,7 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 209.82650848146002
+          "ioValue": 110.181779842521
         },
         {
           "name": "y length",
@@ -134,7 +135,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": -5,
+          "ioValue": -6,
           "currentEquation": "-Width / 2"
         },
         {
@@ -159,7 +160,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": 10,
+          "ioValue": 12,
           "currentEquation": "Width"
         },
         {
@@ -232,11 +233,11 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 209.82650848146002
+          "ioValue": 110.181779842521
         },
         {
           "name": "y length",
-          "ioValue": 10,
+          "ioValue": 12,
           "currentEquation": "Width"
         }
       ]
