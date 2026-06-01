@@ -20,8 +20,7 @@
     },
     {
       "name": "RibHeight",
-      "ioValue": 15,
-      "currentEquation": "15"
+      "ioValue": 9
     }
   ],
   "topLevel": true,
@@ -116,7 +115,7 @@
         },
         {
           "name": "height",
-          "ioValue": 15
+          "ioValue": 9
         }
       ]
     },
@@ -187,47 +186,6 @@
       ]
     },
     {
-      "atomType": "Move",
-      "x": 0.38671874999999994,
-      "y": 0.8511904761904762,
-      "uniqueID": "id-53",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "xDist",
-          "ioValue": 0
-        },
-        {
-          "name": "yDist",
-          "ioValue": 0
-        },
-        {
-          "name": "zDist",
-          "ioValue": -2,
-          "currentEquation": "-2"
-        }
-      ]
-    },
-    {
-      "atomType": "Difference",
-      "x": 0.4635416666666667,
-      "y": 0.7083333333333333,
-      "uniqueID": "id-59",
-      "ioValues": [
-        {
-          "name": "retain",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "remove",
-          "ioValue": "__GEOMETRY_INPUT__"
-        }
-      ]
-    },
-    {
       "atomType": "Assembly",
       "x": 0.55078125,
       "y": 0.7916666666666667,
@@ -239,6 +197,10 @@
         },
         {
           "name": "Shape 2",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 3",
           "ioValue": null
         }
       ]
@@ -335,32 +297,6 @@
       ]
     },
     {
-      "atomType": "Move",
-      "x": 0.09505208333333334,
-      "y": 0.7380952380952381,
-      "uniqueID": "id-88",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "xDist",
-          "ioValue": 0,
-          "currentEquation": "0"
-        },
-        {
-          "name": "yDist",
-          "ioValue": 0
-        },
-        {
-          "name": "zDist",
-          "ioValue": 5,
-          "currentEquation": "5"
-        }
-      ]
-    },
-    {
       "atomType": "Assembly",
       "x": 0.7486979166666666,
       "y": 0.5892857142857143,
@@ -379,13 +315,48 @@
           "ioValue": null
         }
       ]
+    },
+    {
+      "atomType": "Export",
+      "x": 0.9049479166666667,
+      "y": 0.2619047619047619,
+      "uniqueID": "id-101",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "STEP",
+          "currentEquation": "STEP"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "StrongbackForStations",
+          "currentEquation": "StrongbackForStations"
+        }
+      ],
+      "type": "STEP",
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "StrongbackForStations"
     }
   ],
   "allConnectors": [
     {
-      "ap2Name": "geometry",
+      "ap2Name": "shape",
       "ap1ID": "id-4",
-      "ap2ID": "id-88"
+      "ap2ID": "id-19"
+    },
+    {
+      "ap2Name": "Shape 3",
+      "ap1ID": "id-4",
+      "ap2ID": "id-63"
     },
     {
       "ap2Name": "geometry",
@@ -435,21 +406,11 @@
     {
       "ap2Name": "geometry",
       "ap1ID": "id-48",
-      "ap2ID": "id-53"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-48",
       "ap2ID": "id-68"
     },
     {
-      "ap2Name": "remove",
-      "ap1ID": "id-53",
-      "ap2ID": "id-59"
-    },
-    {
       "ap2Name": "Shape 2",
-      "ap1ID": "id-59",
+      "ap1ID": "id-48",
       "ap2ID": "id-63"
     },
     {
@@ -488,14 +449,14 @@
       "ap2ID": "id-94"
     },
     {
-      "ap2Name": "shape",
-      "ap1ID": "id-88",
-      "ap2ID": "id-19"
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-94",
+      "ap2ID": "id-2"
     },
     {
-      "ap2Name": "retain",
-      "ap1ID": "id-88",
-      "ap2ID": "id-59"
+      "ap2Name": "geometry",
+      "ap1ID": "id-94",
+      "ap2ID": "id-101"
     }
   ],
   "unitsKey": "Inches",
