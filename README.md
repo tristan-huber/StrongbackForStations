@@ -9,6 +9,7 @@
 - **Stations** (geometry)
 - **Width** (number)
 - **PlyThickness** (number)
+- **RibHeight** (number)
 
 
 
